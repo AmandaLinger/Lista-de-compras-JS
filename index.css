@@ -10,9 +10,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 20px;
+    border: none;
     background: transparent;
     gap: 4px;
+    margin-bottom: 16px;
 }
 img{
     height: 20px;
@@ -25,7 +26,7 @@ img{
 }
 
 h1{
-    font-family: var(--ff-inter);
+    font-family: 'Inter';
     font-size: 30px;
     font-weight: bold;
     margin: 0;
@@ -37,15 +38,35 @@ form{
     margin-block:20px 42px;
 }
 input{
-        padding: 12px;
+        padding: 16px;
         border-radius: 12px;
         border: 2px solid var(--border-primary);
-    }
+}
+input:focus{
+    border: 2px solid var(--color-brand);
+    outline: none;
+}
+
+.radio{
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+.radio:focus{
+    background: url(assets/img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-brand);
+    border: none;
+}
 
 
 .adicionar{
     background-color: var(--color-brand);
     color: var(--always-white);
+    font-family: 'Inter';
     font-size: var(--fs-label);
     padding: 12px;
     border: none;
@@ -60,7 +81,17 @@ input{
     background: var(--background-secondary);
     border-radius: 12px;
     display: flex;
+    align-items: center;
     padding: 6px 12px;
+    gap: 12px;
+    font-family: 'Inter';
+}
+.name-item{
+    margin-right: 135px;
+}
+.btn_lixeira {
+    background-color: transparent;
+    border: none ;
 }
 
 
@@ -71,7 +102,7 @@ input{
     margin-top: 36px;
     background: var(--color-danger);
     color: var(--always-white);
-    font-family: var(--ff-inter);
+    font-family: 'Inter';
     font-size: var(--fs-label);
     border-radius: 12px;
     font-weight: bold;
@@ -82,5 +113,25 @@ input{
     gap: 8px;
 }
 .p-alert{
-    margin-right: 60px;
+    margin-right: 40px;
+}
+
+
+@media (width> 1000px) {
+    body{
+        padding: 20px 200px;
+    }
+    .logo-container{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        content: url(assets/img/logo.svg);
+    }
+    .name-item{
+        margin-right: 660px;
+    }
+    .p-alert{
+        margin-right: 560px;
+    }
 }
