@@ -91,6 +91,9 @@ input:focus{
     align-items: center;
     padding: 6px 12px;
     font-family: 'Inter';
+    margin-bottom: 8px;
+
+   display: none;
 }
 .btn_lixeira {
     background-color: transparent;
@@ -115,6 +118,11 @@ input:focus{
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    display: none;
+}
+
+.show-result{
+    display: block;
 }
 
 @media (width> 1000px) {
