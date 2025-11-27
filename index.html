@@ -19,8 +19,8 @@
 
         <div class="btn_voltar">
             <button>
-                <img src="assets/img/arrowback_111142.svg" alt="ícone de seta">
-                <span>Voltar</span>
+                <img src="assets/img/arrowback_111142.svg" alt="ícone de seta" id="icon_seta">
+                <div class="voltar">Voltar</div>
             </button>
         </div>
 
@@ -31,9 +31,9 @@
 
             <form>
                 <label for="lista-input"></label>
-                <input type="text" id="lista-input">
+                <input type="text" id="lista-input" placeholder="Adicione um novo item">
 
-                <button type="submit">Adicionar item</button>
+                <button class="adicionar" type="submit">Adicionar item</button>
             </form>
 
             <div class="item-container">
@@ -46,8 +46,8 @@
 
             <div class="alert-remove">
                 <img src="assets/img/warning-circle-filled.svg" alt="ícone de alerta">
-                <p>O item foi removido da lista</p>
-                <img src="assets/img/delete-small.svg" alt="ícone de x">
+                <p class="p-alert">O item foi removido da lista</p>
+                <img src="assets/img/delete-small.svg" alt="ícone de x" >
             </div>
         </div>
     </main>

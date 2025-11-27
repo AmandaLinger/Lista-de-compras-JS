@@ -1,1 +1,86 @@
 @import url(variables.css);
+
+body{
+    background-color: var(--background-primary);
+    font-family: var(--ff-inter);
+    padding: 20px;
+}
+
+.btn_voltar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    background: transparent;
+    gap: 4px;
+}
+img{
+    height: 20px;
+}
+.voltar{
+    font-size: var(--fs-link);
+    color: var(--color-brand);
+    font-weight: bold;
+    line-height: 16px;
+}
+
+h1{
+    font-family: var(--ff-inter);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+form{
+    display: grid;
+    gap: 16px;
+    margin-block:20px 42px;
+}
+input{
+        padding: 12px;
+        border-radius: 12px;
+        border: 2px solid var(--border-primary);
+    }
+
+
+.adicionar{
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    font-size: var(--fs-label);
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+
+
+
+.item-container{
+    background: var(--background-secondary);
+    border-radius: 12px;
+    display: flex;
+    padding: 6px 12px;
+}
+
+
+
+
+
+.alert-remove{
+    margin-top: 36px;
+    background: var(--color-danger);
+    color: var(--always-white);
+    font-family: var(--ff-inter);
+    font-size: var(--fs-label);
+    border-radius: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.p-alert{
+    margin-right: 60px;
+}
