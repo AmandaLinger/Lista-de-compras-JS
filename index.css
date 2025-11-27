@@ -27,15 +27,21 @@ img{
 
 h1{
     font-family: 'Inter';
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     margin: 0;
 }
 
 form{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
     margin-block:20px 42px;
+}
+.space-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 input{
         padding: 16px;
@@ -81,13 +87,10 @@ input:focus{
     background: var(--background-secondary);
     border-radius: 12px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 6px 12px;
-    gap: 12px;
     font-family: 'Inter';
-}
-.name-item{
-    margin-right: 135px;
 }
 .btn_lixeira {
     background-color: transparent;
@@ -110,12 +113,9 @@ input:focus{
     padding: 6px 12px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
 }
-.p-alert{
-    margin-right: 40px;
-}
-
 
 @media (width> 1000px) {
     body{
@@ -128,10 +128,17 @@ input:focus{
     .logo{
         content: url(assets/img/logo.svg);
     }
-    .name-item{
-        margin-right: 660px;
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
     }
-    .p-alert{
-        margin-right: 560px;
+    input{
+        width: 890px;
+        margin-right: 16px;
+    }
+    .adicionar{
+        width: 467px;
     }
 }

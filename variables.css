@@ -20,10 +20,10 @@
     --border-hover:#B9C2D0;
 
     /*font*/
-    ff-inter: 'Inter',sans-serif;
+    --ff-inter: 'Inter',sans-serif;
 
-    fs-title:30px;
-    fs-label:16px;
-    fs-paragraph:16px;
-    fs-link:14px;
+    --fs-title:30px;
+    --fs-label:16px;
+    --fs-paragraph:16px;
+    --fs-link:14px;
 }
