@@ -34,9 +34,14 @@ h1{
 
 form{
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     gap: 16px;
     margin-block:20px 42px;
+}
+
+.name-item{
+    width: content;
 }
 .space-container{
     display: flex;
@@ -92,14 +97,13 @@ input:focus{
     padding: 6px 12px;
     font-family: 'Inter';
     margin-bottom: 8px;
-    display: flex;
 }
 
 .displayNone{
     display: none;
 }
-.displayBlock{
-    display: block;
+.displayVisivel{
+    display: flex;
 }
 .btn_lixeira {
     background-color: transparent;
@@ -145,7 +149,6 @@ input:focus{
     form{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         gap: 0px;
     }
     input{

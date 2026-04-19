@@ -1,32 +1,20 @@
-let campoItem = document.getElementById('lista-input');
-var btnAdicionar = document.querySelector('.adicionar')
-var listaContainer = document.querySelector('.item-container').parentElement;
+function adcItem(){
+    let listaInput = document.getElementById('lista-input').value;
+    let itemContainer = document.querySelector('.item-container');
+    let nameItem = document.querySelector('.name-item')
 
-btnAdicionar.addEventListener("click", (event) => {
-    event.preventDefault();
-    
-    if(!campoItem.value.trim()){
-        alert('Por favor, insira um item para compra')
+
+    if(listaInput == '' || listaInput.trim() == ''){
+        window.alert("Adicione um novo item por favor")
     } else{
-        console.log(campoItem.value)
-        
-        const novoItem = document.createElement('div');
-        novoItem.className = 'item-container displayBlock';
-        
-        novoItem.innerHTML = `
-            <div class="space-container">
-                <button type="radio" class="radio"></button>
-                <p class="name-item">${campoItem.value}</p>
-            </div>
-            <div>
-                <button class="btn_lixeira">
-                    <img src="assets/img/Frame-3.svg" alt="ícone de lixeira">
-                </button>
-            </div>
-        `;
-        
-        listaContainer.appendChild(novoItem);
-        campoItem.value = '';
-        campoItem.focus();
+        itemContainer.classList.add('displayVisivel')
+        nameItem.textContent = listaInput
+
     }
+
+}
+
+document.querySelector('form').addEventListener('submit', function(){
+    event.preventDefault()
+    adcItem();
 })

@@ -32,22 +32,23 @@
             </h1>
 
             <form>
-                <label for="lista-input"></label>
+
                 <input type="text" id="lista-input" placeholder="Adicione um novo item">
 
-                <button class="adicionar" type="submit">Adicionar item</button>
+                <button class="adicionar" type="submit" onclick="adcItem()">Adicionar item</button>
             </form>
 
             <div class="item-container displayNone">
-                <div class="space-container">
+                <span class="space-container">
                     <button type="radio" class="radio"></button>
-                    <p class="name-item">Pão de forma</p>
-                </div>
-                <div>
+                    <p class="name-item"></p>
+                </span>
+                <span>
                     <button class="btn_lixeira">
                         <img src="assets/img/Frame-3.svg" alt="ícone de lixeira">
                     </button>
-                </div>
+                </span>
+            </div>
             </div>
 
         </div>
