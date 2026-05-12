@@ -38,32 +38,33 @@
                 <button class="adicionar" type="submit" onclick="adcItem()">Adicionar item</button>
             </form>
 
-            <div class="item-container displayNone">
+            <div class="item-container displayNone" onclick="itemSelecionado()">
                 <span class="space-container">
-                    <button type="radio" class="radio" name="btnRadio"></button>
+                    <input type="radio" class="radio" name="btnRadio">
                     <p class="name-item"></p>
                 </span>
                 <span>
-                    <button class="btn_lixeira">
-                        <img src="assets/img/Frame-3.svg" alt="ícone de lixeira" name="btnRadio">
+                    <button class="btn_lixeira" onclick="btnLixeira()">
+                        <img src="assets/img/Frame-3.svg" alt="ícone de lixeira">
                     </button>
                 </span>
-            </div>
             </div>
 
         </div>
     </main>
             
 
-            <div class="alert-remove">
-                <div class="space-container">
-                    <img src="assets/img/warning-circle-filled.svg" alt="ícone de alerta">
-                    <p class="p-alert">O item foi removido da lista</p>
-                </div>
-                <div>
-                    <img src="assets/img/delete-small.svg" alt="ícone de x" >
-                </div>
+    <div class="container-alert displayNone" id="container-alert">
+        <div class="alert-remove">
+            <div class="space-container">
+                <img src="assets/img/warning-circle-filled.svg" alt="ícone de alerta">
+                <p class="p-alert">O item foi removido da lista</p>
             </div>
+            <div>
+                <img src="assets/img/delete-small.svg" alt="ícone de x" onclick="btnX()">
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

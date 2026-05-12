@@ -85,9 +85,6 @@ input:focus{
 }
 
 
-
-
-
 .item-container{
     background: var(--background-secondary);
     border-radius: 12px;
@@ -99,9 +96,6 @@ input:focus{
     margin-bottom: 8px;
 }
 
-.displayNone{
-    display: none;
-}
 .displayVisivel{
     display: flex;
 }
@@ -109,9 +103,6 @@ input:focus{
     background-color: transparent;
     border: none ;
 }
-
-
-
 
 
 .alert-remove{
@@ -128,11 +119,16 @@ input:focus{
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    display: none;
+    position: absolute;
+    bottom: 1px;
 }
 
 .show-result{
     display: block;
+}
+
+.displayNone{
+    display: none;
 }
 
 @media (width> 1000px) {
@@ -157,5 +153,16 @@ input:focus{
     }
     .adicionar{
         width: 467px;
+    }
+
+    .alert-remove{
+        width: 950px;
+    }
+    .container-alert{
+        display: flex;
+        justify-content: center;
+    }
+    .displayNone {
+        display: none;
     }
 }
